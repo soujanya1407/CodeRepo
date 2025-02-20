@@ -1,0 +1,28 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+
+        int number = 10;
+        if (isEven(number)) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+
+        System.out.println("Sum of first 5 numbers: " + sumNumbers(5));
+    }
+
+    // Function to check if a number is even
+    public static boolean isEven(int num) {
+        return num % 2 == 0;
+    }
+
+    // Function to calculate the sum of first N numbers
+    public static int sumNumbers(int n) {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+}
