@@ -2,7 +2,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
 
-        int number = 20;
+        int number = 30;
         if (isEven(number)) {
             System.out.println(number + " is even.");
         } else {
@@ -20,7 +20,7 @@ public class HelloWorld {
     // Function to calculate the sum of first N numbers
     public static int sumNumbers(int n) {
         int sum = 0;
-        for (int i = 2; i <= n; i++) {
+        for (int i = 3; i <= n; i++) {
             sum += i;
         }
         return sum;
